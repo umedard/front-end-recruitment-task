@@ -1,5 +1,22 @@
+{# Variables:
+    - box.title
+    - box.content
+    - box.images
+        - url
+        - width
+        - height
+#}
+
 {% extends "base.html" %}
 
 {% block content %}
 <h1>{{ title }}</h1>
+<h2>{{ box.title }}</h2>
+<p>{{ box.content }}</p>
+
+<!-- Display all images -->
+{% for image in box.images %}
+    <img src="{{ image.url }}" alt="Default image size: {{ image.width }} x {{ image.height }}px" style="max-width: 200px; height: auto;" />
+{% endfor %}
+
 {% endblock %}

@@ -10,21 +10,21 @@ if (process.version !== 'v10.16.0') {
 }
 
 // Start PHP local server (TWIG)
-gulp.task('php', function() {
-    php.server({base:'./', port:8010, keepalive:true});
+gulp.task('php', function () {
+    php.server({ base: './', port: 8010, keepalive: true });
 });
 
 // browserSync - this is our helper, improving development
-gulp.task('browserSync',['php'], function() {
+gulp.task('browserSync', ['php'], function () {
     browserSync.init({
-        proxy:"localhost:8010",
+        proxy: "localhost:8010",
         baseDir: "./",
-        open:true,
-        notify:false
+        open: true,
+        notify: false
     });
 });
 
 // Main task
-gulp.task('serve', [ 'browserSync'], function() {    
+gulp.task('serve', ['browserSync'], function () {
     gulp.watch('./*.php', browserSync.reload);
 });

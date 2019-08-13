@@ -10,7 +10,7 @@ The task is to...
 
 ### Prerequisites
 
-1. Node.js `>=10.16.0` is installed locally. [Details](https://nodejs.org/en/).
+1. Node.js `10.16.0` is installed locally. [Details](https://nodejs.org/en/).
 2. PHP `^7.1` is installed locally, PHP built-in server is enabled. [Details](https://www.php.net/manual/en/features.commandline.webserver.php).
 
 ### Installation

@@ -1,10 +1,13 @@
 {# Variables:
-    - box.title
-    - box.content
-    - box.images
-        - url
-        - width
-        - height
+    - title
+    - box
+        - title
+        - content
+        - images
+            - large | medium | small
+                - url
+                - width
+                - height
 #}
 
 {% extends "base.html" %}
@@ -15,8 +18,10 @@
 <p>{{ box.content }}</p>
 
 <!-- Display all images -->
-{% for image in box.images %}
-    <img src="{{ image.url }}" alt="Default image size: {{ image.width }} x {{ image.height }}px" style="max-width: 200px; height: auto;" />
+{% for size, image in box.images %}
+<figure style="display: inline-block">
+    <img src="{{ image.url }}" alt="Trulli" style="max-width: 250px">
+    <figcaption>Image size: {{ size }}, {{ image.width }}x{{ image.height }}px</figcaption>
+</figure>
 {% endfor %}
-
 {% endblock %}

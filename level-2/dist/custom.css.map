@@ -1,0 +1,1 @@
+{"version":3,"sources":["custom.scss","../variables/variables.scss"],"names":[],"mappings":"AAEA,KACI,wBCHqB","file":"custom.css","sourcesContent":["@import 'variables';\n\nbody {\n    background-color: $body-background\n}","$body-background: #F0F0F0;"]}

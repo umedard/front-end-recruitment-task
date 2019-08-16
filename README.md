@@ -12,7 +12,7 @@ Output of every single level is exactly the same – in fact the only difference
 
 ![Component](https://ext-a0ff-github.s3.eu-west-2.amazonaws.com/component.png)
 
-##Levels
+## Levels
 
 **Level 1** – HTML&CSS approach _(est. 30~60 minutes)_
 

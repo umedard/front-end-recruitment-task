@@ -21,7 +21,7 @@ function scssTask(){
         .pipe(sourcemaps.init()) // initialize sourcemaps first
         .pipe(sass({
             includePaths: [
-                'variables/'
+                'node_modules/bootstrap/scss'
             ]
         })) // compile SCSS to CSS
         .pipe(postcss([ autoprefixer(), cssnano() ])) // PostCSS plugins

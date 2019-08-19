@@ -1,8 +1,10 @@
 # Task
 
-Entry level task is based on HTML, CSS (SCSS), Bootstrap 4 boilerplate.
+Middle level task is based on HTML, CSS (SCSS), Bootstrap 4 boilerplate.
 
-HTML code is located in `index.html`, which dynamically fetch Bootstrap 4 dependencies from a CDN. Image assets are located in `images` directory. Any changes to CSS should be placed within `assets/custom.scss` and custom JS code within `assets/custom.js`. Furthermore, if you want to place somewhere SCSS variables, use file `variables/variables.scss`. 
+HTML code is located in `index.html`. Bootstrap 4 is partially loaded from the CDN (JS dependencies), and partially compiled out of SCSS package.
+
+All styling related code should be placed within `assets/custom.scss`, this is where Bootstrap SCSS dependencies are located as well. Custom JS should be placed within `assets/custom.js`.
 
 **Requirements**
 

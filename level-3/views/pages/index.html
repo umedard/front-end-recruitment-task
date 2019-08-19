@@ -3,11 +3,15 @@
     - box
         - title
         - content
-        - images
+        - images_default
             - large | medium | small
                 - url
                 - width
                 - height
+        - images
+            - url
+            - width
+            - height
 #}
 
 {% extends "base.html" %}
@@ -17,11 +21,20 @@
 <h2>{{ box.title }}</h2>
 <p>{{ box.content }}</p>
  
-<!-- Display all images -->
-{% for size, image in box.images %}
+<!-- Display all named images -->
+{% for size, image in box.images_default %}
 <figure style="display: inline-block">
-    <img src="{{ image.url }}" alt="Trulli" style="max-width: 250px">
+    <img src="{{ image.url }}" alt="" style="max-width: 250px">
     <figcaption>Image size: {{ size }}, {{ image.width }}x{{ image.height }}px</figcaption>
 </figure>
 {% endfor %}
+<hr>
+<!-- Display all images -->
+{% for key, image in box.images %}
+<figure style="display: inline-block">
+    <img src="{{ image.url }}" alt="" style="max-width: 250px">
+    <figcaption>Image key: {{ key }}, {{ image.width }}x{{ image.height }}px</figcaption>
+</figure>
+{% endfor %}
+
 {% endblock %}

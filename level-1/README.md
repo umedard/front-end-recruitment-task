@@ -2,7 +2,7 @@
 
 Entry level task is based on HTML, CSS, Bootstrap 4 boilerplate. It requires absolutely no configuration prior to the development work.
 
-HTML code is located in `index.html`, which dynamically fetch Bootstrap 4 dependencies from a CDN. Image assets are located in `images` directory. Any changes to CSS should be placed within `assets/custom.css` and custom JS code within `assets/custom.js`.
+HTML code is located in `index.html`, which dynamically fetches Bootstrap 4 dependencies from a CDN. Image assets are located in `images` directory. Any changes to CSS should be placed within `assets/custom.css` and custom JS code within `assets/custom.js`.
 
 **Requirements**
 

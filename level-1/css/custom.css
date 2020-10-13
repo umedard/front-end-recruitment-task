@@ -1,0 +1,45 @@
+:root {
+  --color-grey: #f0f0f0;
+  --color-white: #ffffff;
+  --color-black: #121212;
+  --color-beige: #e4c1ae;
+  --font-large: 42px;
+  --font-normal: 16px;
+}
+
+/* CSS variables won't work on IE */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-grey);
+  color: var(--color-black);
+}
+
+.container {
+  margin-top: 100px;
+}
+
+/* component text section wrapper */
+.component__wrapper {
+  background-color: var(--color-white);
+}
+
+/* button */
+.component__button {
+  padding: 7px 30px;
+  border: none;
+  border-radius: 20px;
+  color: var(--color-white);
+  background-color: var(--color-beige);
+  font-size: var(--font-normal);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.component__button:hover {
+  background-color: #f7eee7;
+  color: var(--color-black);
+}

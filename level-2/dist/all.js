@@ -1,0 +1,1 @@
+function randomMonth(){var t=["January","February","March","April","May","June","July"],a=Math.floor(Math.random()*t.length);$('[data-toggle="tooltip"]').tooltip({placement:"top",title:t[a]})}randomMonth();
